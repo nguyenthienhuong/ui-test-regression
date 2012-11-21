@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Platform Regression Test" duration-ms="60881" started-at="2012-11-21T09:30:33Z" finished-at="2012-11-21T09:31:34Z">
+    <groups>
+    </groups>
+    <test name="ecms-regression" duration-ms="60873" started-at="2012-11-21T09:30:33Z" finished-at="2012-11-21T09:31:34Z">
+      <class name="org.exoplatform.selenium.platform.ecms.regression.REG_PLF307_ECMS_016">
+        <test-method status="PASS" signature="beforeMethods()[pri:0, instance:org.exoplatform.selenium.platform.ecms.regression.REG_PLF307_ECMS_016@1ff0dde]" name="beforeMethods" is-config="true" duration-ms="26352" started-at="2012-11-21T09:30:33Z" finished-at="2012-11-21T09:30:59Z">
+        </test-method>
+        <test-method status="PASS" signature="test_removeUploadedFile()[pri:0, instance:org.exoplatform.selenium.platform.ecms.regression.REG_PLF307_ECMS_016@1ff0dde]" name="test_removeUploadedFile" duration-ms="31958" started-at="2012-11-21T09:30:59Z" finished-at="2012-11-21T09:31:31Z">
+        </test-method>
+        <test-method status="PASS" signature="afterMethods()[pri:0, instance:org.exoplatform.selenium.platform.ecms.regression.REG_PLF307_ECMS_016@1ff0dde]" name="afterMethods" is-config="true" duration-ms="2548" started-at="2012-11-21T09:31:31Z" finished-at="2012-11-21T09:31:34Z">
+        </test-method>
+      </class>
+    </test>
+    <test name="social-regression" duration-ms="0" started-at="2012-11-21T09:31:34Z" finished-at="2012-11-21T09:31:34Z">
+    </test>
+  </suite>
+</testng-results>

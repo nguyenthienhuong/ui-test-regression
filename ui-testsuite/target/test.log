@@ -1,0 +1,33 @@
+2012-11-21 09:30:50,630 INFO  [REG_PLF307_ECMS_016 ][beforeMethods] Login ECMS with john
+2012-11-21 09:30:50,859 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> link text: Login to the ACME website] display true
+2012-11-21 09:30:54,237 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //*[@id='AcmeWebSiteLogInLogOut']] display true
+2012-11-21 09:30:54,898 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> name: username] display true
+2012-11-21 09:30:58,908 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> name: password] display true
+2012-11-21 09:30:59,097 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //*[@id='UIPortalLoginFormAction']] display true
+2012-11-21 09:31:01,853 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //img[@alt='Setup']] display true
+2012-11-21 09:31:02,429 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> link text: Content] display true
+2012-11-21 09:31:02,962 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> link text: Sites Explorer] display true
+2012-11-21 09:31:07,702 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //a[@title='Show Drives']] display true
+2012-11-21 09:31:08,926 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //a[@class='DriveLabel' and @title = 'Sites Management']] display true
+2012-11-21 09:31:09,106 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //a[@title='Upload']] display true
+2012-11-21 09:31:10,469 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> id: name] display true
+2012-11-21 09:31:10,708 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //iframe[contains(@id,'uploadFrame')]] display true
+2012-11-21 09:31:10,776 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> id: file] display true
+2012-11-21 09:31:10,869 INFO  [ContentTemplate     ][uploadFile] Upload file /home/huong_nguyenthien/java/eXoProjects/ui-test-regression/ui-testsuite/src/main/resources/TestData/ECMS_DMS_SE_Upload_imgfile.jpg
+2012-11-21 09:31:14,027 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> link text: Save] display true
+2012-11-21 09:31:18,168 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> link text: Close] display true
+2012-11-21 09:31:19,074 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //a[@title='ECMS_DMS_SE_Upload_imgfile.jpg ']] display true
+2012-11-21 09:31:19,437 INFO  [ContextMenu         ][deleteDocument] Before displaying 0
+2012-11-21 09:31:19,620 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //a[contains(text(),'Delete')]] display true
+2012-11-21 09:31:19,639 DEBUG [EcmsBase            ][isDisplay] check to display: true
+2012-11-21 09:31:19,640 INFO  [ContextMenu         ][deleteDocument] Element is displayed 
+2012-11-21 09:31:19,734 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //a[contains(text(),'Delete')]] display true
+2012-11-21 09:31:20,541 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //body] display true
+2012-11-21 09:31:26,766 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> link text: OK] display true
+2012-11-21 09:31:28,817 DEBUG [TestBase            ][checkCycling] Exception:org.openqa.selenium.StaleElementReferenceException
+2012-11-21 09:31:30,630 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //a[@title='refresh']] display true
+2012-11-21 09:31:30,870 INFO  [ContextMenu         ][deleteDocument] By.xpath: //a[@title='ECMS_DMS_SE_Upload_imgfile.jpg ']is deleted successfully
+2012-11-21 09:31:31,551 INFO  [REG_PLF307_ECMS_016 ][afterMethods] Logout ECMS
+2012-11-21 09:31:31,657 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //a[@class='TBIcon']] display true
+2012-11-21 09:31:31,922 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //a[@class='LogoutIcon']] display true
+2012-11-21 09:31:32,030 DEBUG [TestBase            ][waitForAndGetElement] wait for and get element [[FirefoxDriver: firefox on LINUX (9965d4c9-bb50-40bc-8941-c499fee5d94e)] -> xpath: //a[@class='LogoutIcon']] display true
