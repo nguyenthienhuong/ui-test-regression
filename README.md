@@ -1,4 +1,4 @@
-ui-test-regression
-==================
+ui-test
+=======
 
-WD scripts test for regression on ECMS
+UI Test set for eXo platform product
