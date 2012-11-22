@@ -1,9 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-
-<suite name="ECMS Functional Test" verbose="1">
-	<test name="ecms-regression" enabled="true">
-		<packages>
-			<package name="org.exoplatform.selenium.platform.ecms.regression" />
-		</packages>
-	</test>
-</suite>
