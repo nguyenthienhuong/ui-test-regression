@@ -2,6 +2,7 @@ package org.exoplatform.selenium.platform.ecms.regression;
 
 import static org.exoplatform.selenium.TestLogger.info;
 import static org.exoplatform.selenium.platform.ecms.ActionBar.goToAddNewContent;
+import static org.exoplatform.selenium.platform.ecms.ContentTemplate.*;
 
 import org.exoplatform.selenium.platform.ecms.EcmsBase;
 import org.openqa.selenium.By;
@@ -17,10 +18,6 @@ public class REG_PLF307_ECMS_001 extends EcmsBase {
 	public static final By ELEMENT_ARTICLE_TITLE_TEXTBOX = By.id("title");
 	public static final By ELEMENT_ARTICLE_LINK = By.xpath("//div[@title='Article']");
 	public static final By ELEMENT_ARTICLE_NAME_TEXTBOX = By.id("name");
-	public static final By ELEMENT_SUMMARY_SOURCE_BUTTON = By.id("cke_9_label");
-	public static final By ELEMENT_CONTENT_SOURCE_BUTTON = By.id("cke_45_label");
-	public static final By ELEMENT_ARTICLE_SUMMARY_SOURCE_FRAME = By.xpath("//td[@id='cke_contents_summary']/textarea");
-	public static final By ELEMENT_ARTICLE_CONTENT_FRAME = By.xpath("//td[@id='cke_contents_content']/textarea");
 	public static final By ELEMENT_VIEW_PROPERTIES_LINK =By.linkText("Properties");
 	public static final By ELEMENT_SYSTEM_LINK =By.linkText("System");
 	
@@ -62,33 +59,13 @@ public class REG_PLF307_ECMS_001 extends EcmsBase {
 		goToAddNewContent();
 		//Create an article
 		createNewArticleUseSource(DATA_ARTICLE_TITLE, DATA_ARTICLE_TITLE, DATA_SUMMARY_FIELD, DATA_SUMMARY_FIELD);
-		waitForElementPresent(ELEMENT_ARTICLE);
-		
-	}
-
-	private void createNewArticleUseSource(String title,
-			String name, String sum,
-			String cont) {
-		click(ELEMENT_ARTICLE_LINK);
-		// Input information
-		type(ELEMENT_ARTICLE_TITLE_TEXTBOX,title,false);
-		type(ELEMENT_ARTICLE_NAME_TEXTBOX, name, true);
-		//Click to the Source button on FCKEditor of Summary field
-		click(ELEMENT_SUMMARY_SOURCE_BUTTON);
-		type(ELEMENT_ARTICLE_SUMMARY_SOURCE_FRAME, sum, false);
-		switchToParentWindow();
-		//Click to the Source button on FCKEditor of Content field
-		click(ELEMENT_CONTENT_SOURCE_BUTTON);
-		type(ELEMENT_ARTICLE_CONTENT_FRAME, cont, false);
-		switchToParentWindow();
-		//save
-		click(ELEMENT_SAVE_CLOSE_BUTTON);
 		//View the properties
 		//Click to system link
 		click(ELEMENT_SYSTEM_LINK);
 		click(ELEMENT_VIEW_PROPERTIES_LINK);
 		waitForElementPresent(ELEMENT_VIEW_PROPERTIES_LINK);
-		captureScreen("test_ViewPropertiesComponent_REG_PLF307_ECMS_001.png");
+		captureScreen("test_ViewPropertiesComponent_REG_PLF307_ECMS_001");
+		waitForElementPresent(ELEMENT_ARTICLE);
 		
 	}
 }
