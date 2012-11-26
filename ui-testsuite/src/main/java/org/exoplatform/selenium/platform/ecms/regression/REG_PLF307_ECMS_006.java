@@ -10,11 +10,13 @@ import static org.exoplatform.selenium.platform.ecms.PageEditor.goToPageEditor_E
 import static org.exoplatform.selenium.platform.ecms.PageEditor.selectCLVPath;
 import static org.exoplatform.selenium.platform.ecms.SiteExplorer.chooseDrive;
 import static org.exoplatform.selenium.platform.ecms.WcmAdmin.addView_withName;
+import static org.exoplatform.selenium.platform.ecms.functional.wcm.viewer.listcontent.ECMS_WCM_Viewer_ListContent_EditIcon.*;
 
 import java.util.HashMap;
 import java.util.Map;
 
 import org.exoplatform.selenium.platform.ecms.EcmsBase;
+import org.exoplatform.selenium.platform.ecms.functional.wcm.viewer.listcontent.ECMS_WCM_Viewer_ListContent_EditIcon;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -117,7 +119,8 @@ public class REG_PLF307_ECMS_006 extends EcmsBase{
 		//Close add link for document
 		click(ELEMENT_CLOSE_BUTTON);
 		//Public document
-		publicDocument();
+		click(ELEMENT_PUBLICATION_TAB_LINK);
+		publishDocument();
 		//Go to ACME Home Page
 		goToOverView();
 		//Go to Add Page Editor with Editor
@@ -132,17 +135,17 @@ public class REG_PLF307_ECMS_006 extends EcmsBase{
 		waitForElementNotPresent(ELEMENT_PAGE_EDIT_FINISH);
 		captureScreen("REG_PLF307_ECMS_006");
 	}
-	public static void publicDocument(){
-		info("Public this document");
-		click(ELEMENT_PUBLICATION_TAB_LINK);
-		waitForElementPresent(ELEMENT_PUBLICATION);
-		click(ELEMENT_PUBLICATION);
-		WebElement current = waitForAndGetElement(ELMENET_CURRENT_STATUS);
-		if (current.getText().contains("Published") == false){
-			click(ELEMENT_PUBLIC_STATUS);
-		}
-		waitForElementPresent(ELEMENT_CURRENT_PUBLIC_STATUS);
-		save();
-		info("Public document is successful");
-	}
+//	public static void publishDocument(){
+//		info("Public this document");
+//		click(ELEMENT_PUBLICATION_TAB_LINK);
+//		waitForElementPresent(ELEMENT_PUBLICATION);
+//		click(ELEMENT_PUBLICATION);
+//		WebElement current = waitForAndGetElement(ELMENET_CURRENT_STATUS);
+//		if (current.getText().contains("Published") == false){
+//			click(ELEMENT_PUBLIC_STATUS);
+//		}
+//		waitForElementPresent(ELEMENT_CURRENT_PUBLIC_STATUS);
+//		save();
+//		info("Public document is successful");
+//	}
 }

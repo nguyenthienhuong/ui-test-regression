@@ -22,6 +22,7 @@ import static org.exoplatform.selenium.platform.ecms.ActionBar.goToAddNewContent
 import static org.exoplatform.selenium.platform.ecms.ContentTemplate.*;
 import static org.exoplatform.selenium.platform.ecms.ContextMenu.*;
 
+
 import org.exoplatform.selenium.platform.ecms.EcmsBase;
 import org.exoplatform.selenium.platform.ecms.PageEditor;
 import org.exoplatform.selenium.platform.ecms.WcmAdmin;
@@ -133,7 +134,7 @@ public class ECMS_WCM_Viewer_ListContent_EditIcon extends EcmsBase {
 	}
 
 	//function to public a document
-	public void publishDocument(){
+	public static void publishDocument(){
 		info("Publish this document");
 		waitForElementPresent(ELEMENT_PUBLICATION);
 		click(ELEMENT_PUBLICATION);
@@ -146,7 +147,7 @@ public class ECMS_WCM_Viewer_ListContent_EditIcon extends EcmsBase {
 		info("Publish document is successful");
 	}  
 
-	public void addNewContentTest(String DATA_FOLDER_NAME,
+	public static void addNewContentTest(String DATA_FOLDER_NAME,
 			By DATA_FOLDER_PATH,
 			String DATA_ARTICLE_TITLE) {
 		info("-- Add/Publish a new content --");
